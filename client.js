@@ -13,6 +13,10 @@ const connect = function () {
   conn.on("connect", () => {
     console.log("connected t server!!!!!!!!")
     conn.write("Name: SNK")
+    // setInterval(() => {
+    //   conn.write("Move: up");
+    // }, 500)
+
   })
 
   conn.on("data", (data) => {
